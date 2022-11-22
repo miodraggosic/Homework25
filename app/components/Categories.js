@@ -29,7 +29,7 @@ class Categories {
   }
 
   deleteItem(id) {
-    fetch(this.Api + id, {
+    fetch(this.Api + `/${id}`, {
       method: "DELETE",
     }).then(() => this.renderCategories());
   }
