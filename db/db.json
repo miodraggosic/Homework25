@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    {
+      "name": "Miodrag",
+      "lastName": "Gosic",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "categoryName": "Roman",
+      "id": 1
+    },
+    {
+      "categoryName": "Fantastika",
+      "id": 2
+    },
+    {
+      "categoryName": "Horor",
+      "id": 3
+    }
+  ]
+}

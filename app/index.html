@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <script type="module" src="./app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="jumbotron" id="content-wrapper">
+        <h1>Candidates</h1>
+        <form method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" id="firstName" placeholder="First Name" />
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success btn-block" id="addCandidate">Add Candidate</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableCandidates">
+                <!-- Print candidates from JS -->
+                <tr class="table-light">
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!-- Add new category -->
+        <form id="categoryForm">
+            <h2>Add Category</h2>
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Category name" id="categoryName">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success btn-block" type="button" id="addCategory">Add Category</button>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th>ID</th>
+                    <th>Category name</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableCategory">
+                <!-- Print candidates from JS -->
+                <tr class="table-light">
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
