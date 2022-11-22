@@ -29,7 +29,7 @@ class Candidates {
   }
 
   deleteItem(id) {
-    fetch("http://localhost:3000/candidates/" + id, {
+    fetch(this.Api + id, {
       method: "DELETE",
     }).then(() => this.renderCandidates());
   }

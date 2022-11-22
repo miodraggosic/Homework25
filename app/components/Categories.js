@@ -29,7 +29,7 @@ class Categories {
   }
 
   deleteItem(id) {
-    fetch("http://localhost:3000/categories/" + id, {
+    fetch(this.Api + id, {
       method: "DELETE",
     }).then(() => this.renderCategories());
   }
