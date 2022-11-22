@@ -1,8 +1,6 @@
 import { Candidate, Candidates } from "./components/Candidates.js";
 import { Categories, Category } from "./components/Categories.js";
-
-const apiCandidates = "http://localhost:3000/candidates";
-const apiCategories = "http://localhost:3000/categories";
+import { localPort, apiCandidates, apiCategories } from "./components/env.js";
 
 const candidates = new Candidates(apiCandidates);
 const categories = new Categories(apiCategories);
