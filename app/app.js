@@ -1,9 +1,9 @@
 import { Candidate, Candidates } from "./components/Candidates.js";
 import { Categories, Category } from "./components/Categories.js";
-import { localPort, apiCandidates, apiCategories } from "./components/env.js";
+import Api from "./env.js";
 
-const candidates = new Candidates(apiCandidates);
-const categories = new Categories(apiCategories);
+const candidates = new Candidates(Api.candidates);
+const categories = new Categories(Api.categories);
 
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
